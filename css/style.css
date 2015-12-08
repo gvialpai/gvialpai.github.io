@@ -38,13 +38,13 @@ ul
   height: 50%
 }
 
-#professional-experience ul{
-  height: 100%;
+#professional-experience ul#jobs{
+  height: 50%;
 }
 
 #professional-experience li.xp {
-    height: 50%;
-    width: 15%;
+    height: 100%;
+    width: 5%;
 }
 
 li.xp{
@@ -65,4 +65,16 @@ li#xp3, #xp7, #xp11{
 
 li#xp4, #xp8, #xp12{
   background-color: #E3835A;
+}
+
+.line-separator{
+  height:1px;
+  background:#717171;
+  border-bottom:1px solid #313030;
+}
+
+.line-separator li{
+  display: inline-block;
+  margin-left: 8%;
+  margin-right: 8%;
 }
