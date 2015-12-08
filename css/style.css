@@ -1,0 +1,68 @@
+body{
+  height: 1200px;
+  width: 1200px;
+}
+
+nav{
+  width: 100%;
+  height: 5%;
+}
+
+#navigation-bar li {
+  display: inline-block;
+}
+
+h1{
+}
+
+ul
+{
+    list-style: none;
+}
+
+#experience {
+  height: 30%;
+  width: 100%;
+}
+
+#experience-title{
+  text-align: center;
+  height: 10%;
+}
+
+#timeline{
+  height: 90%
+}
+
+#professional-experience{
+  height: 50%
+}
+
+#professional-experience ul{
+  height: 100%;
+}
+
+#professional-experience li.xp {
+    height: 50%;
+    width: 15%;
+}
+
+li.xp{
+  display: inline-block;
+}
+
+li#xp1, #xp5, #xp9{
+  background-color: #C3983F;
+}
+
+li#xp2, #xp6, #xp10{
+  background-color: #B49695;
+}
+
+li#xp3, #xp7, #xp11{
+  background-color: #E54384;
+}
+
+li#xp4, #xp8, #xp12{
+  background-color: #E3835A;
+}
