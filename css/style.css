@@ -11,8 +11,12 @@ li{
 }
 
 #home{
-  background-image: url('../IMG_4389.JPG');
+  background-image: url('../pictures/places/landscape.jpg');
   background-size: 100%;
   height: 768px;
   background-repeat: no-repeat;
+}
+#profile-pic{
+  width: 20%;
+  border-radius: 50%;
 }
