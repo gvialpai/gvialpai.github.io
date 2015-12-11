@@ -2,58 +2,43 @@
 <html>
 <head>
   <title>Guillaume Vial-Pailler</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-  <script type="text/javascript" scr="./js/app.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
   <link rel="stylesheet" type="text/css" href="./css/reset.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
-<body>
-  <nav>
-    <ul id="navigation-bar">
-    <li><a><h1>Guillaume Vial-Pailler</h1></a></li>
-    <li><a>Experience</a></li>
-    <li><a>About</a></li>
-    <li><a>Contact</a></li>
+<body class="col-lg-12">
+  <nav id="navigation-bar" class="col-lg-12 navbar navbar-default navbar-static-top">
+    <ul class="top-left nav navbar-nav">
+      <li>
+        <a><h1>Guillaume Vial-Pailler</h1></a>
+      </li>
+    </ul>
+    <ul id="menu" class="top-right av navbar-nav navbar-right">
+      <li><a id="home-button" href="#">Home</a></li>
+      <li><a id="about-button" href="#">About</a></li>
+      <li><a id="apps" href="#" data-page="apps">Apps</a></li>
+      <li><a id="experience" href="#" data-page="experience">Experience</a></li>
+      <li><a id="contact" href="#" data-page="contact">Contact</a></li>
     </ul>
   </nav>
-  <section id="experience">
-    <h2 id="experience-title">Experience</h2>
-    <div id="timeline">
-      <div id="professional-experience">
-        <ul id="jobs">
-        <li id="xp1" class="xp">
-          </li>
-          <li id="xp2" class="xp">
-          </li>
-          <li id="xp3" class="xp">
-          </li>
-          <li id="xp4" class="xp">
-          </li>
-          <li id="xp5" class="xp">
-          </li>
-          <li id="xp6" class="xp">
-          </li>
-          <li id="xp7" class="xp">
-          </li>
-          <li id="xp8" class="xp">
-          </li>
-          <li id="xp9" class="xp">
-          </li>
-          <li id="xp10" class="xp">
-          </li>
-          <li id="xp11" class="xp">
-          </li>
-        </ul>
-        <ul class="line-separator">
-          <li>2012</li>
-          <li>2013</li>
-          <li>2014</li>
-          <li>2015</li>
-          <li>2016</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  <main class="col-lg-12">
 
+  <div id="home" class="col-lg-12" data-page="page1">
+  </div>
+
+  <div id="about" class="col-lg-12" data-page="page2">
+  <h2>Guillaume Vial-Pailler</h2>
+  <h3>Web Developper</h3>
+  <p>I have worked on Online Platforms for more than 3 years  </p>
+  </div>
+
+
+
+  </main>
 </body>
 </html>

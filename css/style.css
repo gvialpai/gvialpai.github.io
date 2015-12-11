@@ -1,80 +1,18 @@
-body{
-  height: 1200px;
-  width: 1200px;
+body.col-lg-12{
+  padding: 0
 }
 
-nav{
-  width: 100%;
-  height: 5%;
+main{
+  padding: 0;
 }
 
-#navigation-bar li {
+li{
   display: inline-block;
 }
 
-h1{
-}
-
-ul
-{
-    list-style: none;
-}
-
-#experience {
-  height: 30%;
-  width: 100%;
-}
-
-#experience-title{
-  text-align: center;
-  height: 10%;
-}
-
-#timeline{
-  height: 90%
-}
-
-#professional-experience{
-  height: 50%
-}
-
-#professional-experience ul#jobs{
-  height: 50%;
-}
-
-#professional-experience li.xp {
-    height: 100%;
-    width: 5%;
-}
-
-li.xp{
-  display: inline-block;
-}
-
-li#xp1, #xp5, #xp9{
-  background-color: #C3983F;
-}
-
-li#xp2, #xp6, #xp10{
-  background-color: #B49695;
-}
-
-li#xp3, #xp7, #xp11{
-  background-color: #E54384;
-}
-
-li#xp4, #xp8, #xp12{
-  background-color: #E3835A;
-}
-
-.line-separator{
-  height:1px;
-  background:#717171;
-  border-bottom:1px solid #313030;
-}
-
-.line-separator li{
-  display: inline-block;
-  margin-left: 8%;
-  margin-right: 8%;
+#home{
+  background-image: url('../IMG_4389.JPG');
+  background-size: 100%;
+  height: 768px;
+  background-repeat: no-repeat;
 }
