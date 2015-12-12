@@ -1,15 +1,26 @@
 $( document ).ready(function() {
     console.log( "ready!" );
     $("#about").hide();
-
-    $("#about-button").click(function(){
-      $("#home").hide();
-      $("#about").show();
-    });
+    $("#projects").hide();
 
     $("#home-button").click(function(){
-      $("#about").hide();
       $("#home").show();
+      $("#about").hide();
+      $("#projects").hide();
+    });
+
+    $("#about-button").click(function(){
+      $("#about").show();
+      $("#home").hide();
+      $("#projects").hide();
+
+    });
+
+    $("#projects-button").click(function(){
+      $("#projects").show();
+      $("#home").hide();
+      $("#about").hide();
+
     });
 
 });
