@@ -24,3 +24,7 @@ li{
 #about{
   text-align: center;
 }
+
+.logo-in-container{
+  width: 100%
+}
