@@ -27,3 +27,23 @@ body {
   left: 20px;
   background: url(/globe/ce.png);
 }
+
+#container{
+  height: 90vh;
+  padding: 0;
+}
+
+#introduction{
+  background-color: black;
+  height: 90vh;
+}
+
+.text{
+  text-align: center;
+  margin-top: 25%;
+  color: white
+}
+
+#hello{
+  padding: 0
+}
