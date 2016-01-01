@@ -30,6 +30,9 @@ $( document ).ready(function() {
     $("#tcbutton").click(function(){
         $("#tcModal").modal();
     });
-
+    
+    $("#mitbutton").click(function(){
+        $("#mitModal").modal();
+    });
 });
 
