@@ -39,6 +39,10 @@ $( document ).ready(function() {
         $("#buModal").modal();
     });
 
+    $("#mapbutton").click(function(){
+        $("#mapModal").modal();
+    });
+
     $(function() {
     // OPACITY OF BUTTON SET TO 0%
     $(".roll").css("opacity","0");
