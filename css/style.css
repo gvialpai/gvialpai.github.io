@@ -36,6 +36,11 @@ li{
 
 .fa{
   font-size: 2em;
+  color: #333333;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 #about{
