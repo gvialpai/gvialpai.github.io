@@ -135,6 +135,12 @@ h4.modal-title{
   margin-right: 5%;
 }
 
+#blurb, #tech-skills {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+}
+
 span.roll {
   background:url(../pictures/icons/mag.png) center center no-repeat #000;
   height: 200px;
