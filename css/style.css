@@ -99,6 +99,10 @@ h1{
   height: 100%;
 }
 
+.navbar-inverse{
+  background-color: black
+}
+
 .modal-body{
   text-align: center;
 }
