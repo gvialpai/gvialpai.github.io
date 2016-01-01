@@ -21,7 +21,7 @@ li{
 }
 #profile-pic{
   width: 20%;
-  border-radius: 50%;
+  border-radius: 3%;
 }
 
 #about{
@@ -102,7 +102,7 @@ h4.modal-title{
   text-align: center;
 }
 
-#front-end-skills{
+#front-end-skills, #background, .job-list{
   padding: 0;
   margin-top: 25px;
 }
@@ -112,10 +112,15 @@ h4.modal-title{
   margin-top: 50px;
 }
 
+#front-end-languages, #back-end-languages{
+    margin-top: 15px;
+}
+
 .thumbnail-icon{
   padding: 0;
   margin-right: 5%;
 }
+
 span.roll {
   background:url(../pictures/icons/mag.png) center center no-repeat #000;
   height: 200px;
