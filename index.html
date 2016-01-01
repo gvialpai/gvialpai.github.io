@@ -6,11 +6,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
     <script type="text/javascript" src="./app.js"></script>
+    <script type="text/javascript" src="/globe/Detector.js"></script>
+    <script type="text/javascript" src="/globe/three.min.js"></script>
+    <script type="text/javascript" src="/globe/globe.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-
+    <link rel="stylesheet" type="text/css" href="./hello.css">
   </head>
   <body class="col-lg-12">
   <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -40,8 +43,43 @@
 
     <main class="col-lg-12">
 
-      <div id="home" class="col-lg-12">
+    <div id="home">
+    <div id="container" class="col-lg-6"></div>
+
+    <script type="text/javascript">
+
+      var globe = DAT.Globe(document.getElementById('container'), {
+        colorFn: function(label) {
+           return new THREE.Color([label]);
+        }
+      });
+
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', './globe/search.json', true);
+      xhr.onreadystatechange = function(e) {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            var data = JSON.parse(xhr.responseText);
+            window.data = data;
+            globe.addData(data, {format: 'legend'});
+            globe.createPoints();
+            globe.animate();
+            document.body.style.backgroundImage = 'none'; // remove loading
+          }
+        }
+      };
+      xhr.send(null);
+
+    </script>
+
+    <div id="introduction" class="col-lg-6">
+      <div class="text col-lg-12">
+        <h1>Hello I'm Guillaume!</h1>
+        <h2>I'm French and I make apps</h2>
+        <h3>Come Have a Look</h3>
       </div>
+    </div>
+  </div>
 
       <div id="about" class="col-lg-12">
         <div id="blurb" class="col-lg-10 col-lg-offset-1">
@@ -129,7 +167,7 @@
                 <img src="./pictures/icons/languages/mongodb.svg" class="language-thumbnail">
               </li>
               <li id="postgresql" class="col-lg-2">
-                <img src="./pictures/icons/languages/postgresql.png" class="language-thumbnail">
+                <img src="./pictures/icons/languages/postgresql.svg" class="language-thumbnail">
               </li>
             </ul>
           </div>
