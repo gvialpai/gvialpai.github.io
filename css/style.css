@@ -104,6 +104,12 @@ h4.modal-title{
 
 #front-end-skills{
   padding: 0;
+  margin-top: 25px;
+}
+
+#back-end-skills{
+  padding: 0;
+  margin-top: 50px;
 }
 
 .thumbnail-icon{
