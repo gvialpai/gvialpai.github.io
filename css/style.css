@@ -88,10 +88,28 @@ h4.modal-title{
 
 }
 
-img.col-lg-12{
-  background-color: white;
+.language-thumbnail{
+  height: 60px;
+  width: 100%;
 }
 
+.language-type{
+  padding: 0;
+  text-align: left;
+}
+
+#tech-skills{
+  text-align: center;
+}
+
+#front-end-skills{
+  padding: 0;
+}
+
+.thumbnail-icon{
+  padding: 0;
+  margin-right: 5%;
+}
 span.roll {
   background:url(../pictures/icons/mag.png) center center no-repeat #000;
   height: 200px;
