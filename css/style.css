@@ -138,6 +138,7 @@ h4.modal-title{
 #blurb, #tech-skills {
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    border-spacing: 10px;
     border-bottom-color: black;
 }
 
