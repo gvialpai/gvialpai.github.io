@@ -9,7 +9,7 @@ $( document ).ready(function() {
       $("#projects").hide();
     });
 
-    $("#about-button").click(function(){
+    $(".about-button").click(function(){
       $("#about").show();
       $("#home").hide();
       $("#projects").hide();
