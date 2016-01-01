@@ -26,6 +26,10 @@ $( document ).ready(function() {
     $("#kinvolvedbutton").click(function(){
         $("#kinvolvedModal").modal();
     });
-    
+
+    $("#tcbutton").click(function(){
+        $("#tcModal").modal();
+    });
+
 });
 
