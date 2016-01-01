@@ -47,6 +47,18 @@ $( document ).ready(function() {
         $("#peModal").modal();
     });
 
+    $("#akbutton").click(function(){
+        $("#akModal").modal();
+    });
+
+    $("#lphibutton").click(function(){
+        $("#lphiModal").modal();
+    });
+
+    $("#laglissebutton").click(function(){
+        $("#laglisseModal").modal();
+    });
+
     $(function() {
     // OPACITY OF BUTTON SET TO 0%
     $(".roll").css("opacity","0");

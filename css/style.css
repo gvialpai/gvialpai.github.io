@@ -88,6 +88,10 @@ h4.modal-title{
 
 }
 
+img.col-lg-12{
+  background-color: white;
+}
+
 span.roll {
   background:url(../pictures/icons/mag.png) center center no-repeat #000;
   height: 200px;
