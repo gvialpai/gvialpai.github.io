@@ -72,3 +72,12 @@ h1{
   transition: 0.7s all linear;
   height: 100%;
 }
+
+.modal-body{
+  text-align: center;
+}
+
+h4.modal-title{
+  text-align: center;
+
+}

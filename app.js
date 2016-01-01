@@ -23,5 +23,9 @@ $( document ).ready(function() {
 
     });
 
+    $("#kinvolvedbutton").click(function(){
+        $("#kinvolvedModal").modal();
+    });
+    
 });
 
