@@ -44,6 +44,15 @@ a:hover {
   text-decoration: none;
 }
 
+#about-home {
+  color: #FFFFFF;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  font-size: 2em;
+  padding: 5px;
+
+}
 #about{
   text-align: center;
 }
