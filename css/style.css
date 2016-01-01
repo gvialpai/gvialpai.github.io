@@ -28,6 +28,9 @@ li{
   text-align: center;
 }
 
+.image{
+  padding: 0;
+}
 .logo-container{
   height: 90px;
 }
@@ -45,6 +48,10 @@ li{
 h1{
   color: #333333;
 
+}
+
+.thumbnail{
+  padding: 0;
 }
 
 .navbar, .navbar-inverse {
@@ -80,4 +87,16 @@ h1{
 h4.modal-title{
   text-align: center;
 
+}
+
+span.roll {
+  background:url(images/mag.png) center center no-repeat #000;
+  height: 200px;
+  position: absolute;
+  z-index: 10;  
+  -webkit-box-shadow: 0px 0px 4px #000;
+  -moz-box-shadow: 0px 0px 4px  #000;
+  box-shadow: 0px 0px 4px  #000; 
+  padding: 0;
+  margin-top: 30px;
 }
