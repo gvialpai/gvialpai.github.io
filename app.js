@@ -43,6 +43,10 @@ $( document ).ready(function() {
         $("#mapModal").modal();
     });
 
+    $("#pebutton").click(function(){
+        $("#peModal").modal();
+    });
+
     $(function() {
     // OPACITY OF BUTTON SET TO 0%
     $(".roll").css("opacity","0");
