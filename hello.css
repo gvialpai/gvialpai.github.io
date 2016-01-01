@@ -44,6 +44,10 @@ html {
   color: white
 }
 
+canvas{
+  width: 100%
+}
+
 #hello{
   padding: 0
 }

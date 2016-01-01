@@ -5,7 +5,8 @@ body.col-lg-12{
 body{
   background-color: #f8f8f8;
 }
-main{
+
+main.col-lg-12{
   padding: 0;
 }
 
