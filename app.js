@@ -2,25 +2,34 @@ $( document ).ready(function() {
     console.log( "ready!" );
     $("#about").hide();
     $("#projects").hide();
+    $("#apps").hide();
 
     $("#home-button").click(function(){
       $("#home").show();
       $("#about").hide();
       $("#projects").hide();
+      $("#apps").hide();
     });
 
     $(".about-button").click(function(){
       $("#about").show();
       $("#home").hide();
       $("#projects").hide();
+      $("#apps").hide();
+    });
 
+    $("#apps-button").click(function(){
+      $("#apps").show();
+      $("#home").hide();
+      $("#about").hide();
+      $("#projects").hide();
     });
 
     $("#projects-button").click(function(){
       $("#projects").show();
       $("#home").hide();
       $("#about").hide();
-
+      $("#apps").hide();
     });
 
     $("#kinvolvedbutton").click(function(){

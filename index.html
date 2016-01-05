@@ -15,12 +15,13 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./hello.css">
     <link rel="icon" href="./pictures/logo/Guihub.ico" type="image/x-icon" />
-
   </head>
+
   <body class="col-lg-12">
-  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-        <div class="container">
-           <div class="navbar-header">
+
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container">
+       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-button">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -31,60 +32,54 @@
           <img id="guihub-logo" src="pictures/logo/Guihub_logo.png">
           <h1 id="guihub-title">Guihub</h1>
         </a>
-
       </div>
-
-          <div class="collapse navbar-collapse" id="navbar-collapse-button">
-              <ul class="nav navbar-nav">
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-
-        <li><a class="about-button" href="#">About</a></li>
-        <li><a id="apps-button" href="#" data-page="apps">Apps</a></li>
-        <li><a id="projects-button" href="#" data-page="projects">Experience</a></li>
-      </ul>
-    </div>
-  </nav>
+      <div class="collapse navbar-collapse" id="navbar-collapse-button">
+        <ul class="nav navbar-nav">
+          <li><a class="about-button" href="#">About</a></li>
+          <li><a id="apps-button" href="#" data-page="apps">Apps</a></li>
+          <li><a id="projects-button" href="#" data-page="projects">Experience</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <main class="col-lg-12">
+      <div id="home">
+        <div id="container" class="col-lg-6">
+        </div>
 
-    <div id="home">
-    <div id="container" class="col-lg-6"></div>
+        <script type="text/javascript">
 
-    <script type="text/javascript">
+          var globe = DAT.Globe(document.getElementById('container'), {
+            colorFn: function(label) {
+             return new THREE.Color([label]);
+           }
+         });
 
-      var globe = DAT.Globe(document.getElementById('container'), {
-        colorFn: function(label) {
-           return new THREE.Color([label]);
-        }
-      });
-
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', './globe/search.json', true);
-      xhr.onreadystatechange = function(e) {
-        if (xhr.readyState === 4) {
-          if (xhr.status === 200) {
-            var data = JSON.parse(xhr.responseText);
-            window.data = data;
-            globe.addData(data, {format: 'legend'});
-            globe.createPoints();
-            globe.animate();
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', './globe/search.json', true);
+          xhr.onreadystatechange = function(e) {
+            if (xhr.readyState === 4) {
+              if (xhr.status === 200) {
+                var data = JSON.parse(xhr.responseText);
+                window.data = data;
+                globe.addData(data, {format: 'legend'});
+                globe.createPoints();
+                globe.animate();
             document.body.style.backgroundImage = 'none'; // remove loading
-          }
-        }
-      };
-      xhr.send(null);
+              }
+            }
+          };
+          xhr.send(null);
+        </script>
 
-    </script>
-
-    <div id="introduction" class="col-lg-6">
-      <div class="text col-lg-12">
-        <h1>Hello I'm Guillaume!</h1>
-        <h2>I'm French and I make apps</h2>
-        <a id="about-home" class="about-button" href="#">Come Have a Look</a>
+        <div id="introduction" class="col-lg-6">
+          <div class="text col-lg-12">
+            <h1>Hello I'm Guillaume!</h1>
+            <h2>I'm French and I make apps</h2>
+            <a id="about-home" class="about-button" href="#">Come Have a Look</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
       <div id="about" class="col-lg-12">
         <div id="blurb" class="col-lg-10 col-lg-offset-1">
@@ -95,29 +90,27 @@
           </div>
           <div id="profile-text" class="col-lg-8">
 
-          <p>I am fascinated by the way humans redefine existing processes through innovation to improve their outcomes.</p>
-          <p>I have worked on Online Platforms for more than 3 years with markets such as Healthcare, Education and Entertainment.</p>
-          <p>After focusing on the Strategic Aspects of these Applications I decided to become a Web Developper and joined General Assembly's Web Development Immersive.</p>
-          <p>I am currently based in London, UK.</p>
+            <p>I am fascinated by the way humans redefine existing processes through innovation to improve their outcomes.</p>
+            <p>I have worked on Online Platforms for more than 3 years with markets such as Healthcare, Education and Entertainment.</p>
+            <p>After focusing on the Strategic Aspects of these Applications I decided to become a Web Developper and joined General Assembly's Web Development Immersive.</p>
+            <p>I am currently based in London, UK.</p>
 
-          <div id="social-media-links" class="row">
-          <ul>
-            <a href="https://uk.linkedin.com/in/gvialpailler" target="_blank">
-              <i class="fa fa-linkedin-square"></i>
-            </a>
-            <a href="https://github.com/gvialpai" target="_blank">
-              <i class="fa fa-github-square"></i>
-            </a>
-            <a href="https://twitter.com/gvialpailler" target="_blank">
-              <i class="fa fa-twitter-square"></i>
-            </a>
-            <a href="mailto:dev.guihub@gmail.com" id='mailto'>
-              <i class="fa fa-envelope-square"></i>
-            </a>
-            </li>
-
-          </ul>
-          </div>
+            <div id="social-media-links" class="row">
+              <ul>
+                <a href="https://uk.linkedin.com/in/gvialpailler" target="_blank">
+                  <i class="fa fa-linkedin-square"></i>
+                </a>
+                <a href="https://github.com/gvialpai" target="_blank">
+                  <i class="fa fa-github-square"></i>
+                </a>
+                <a href="https://twitter.com/gvialpailler" target="_blank">
+                  <i class="fa fa-twitter-square"></i>
+                </a>
+                <a href="mailto:dev.guihub@gmail.com" id='mailto'>
+                  <i class="fa fa-envelope-square"></i>
+                </a>
+              </ul>
+            </div>
 
           </div>
         </div>
@@ -128,30 +121,30 @@
             <div class="row language-type col-lg-6 col-lg-offset-4">
             <img src="./pictures/icons/languages/frontend.png" class="col-lg-3"> 
             <h3 class="col-lg-6">Front-End:</h3>            
-          </div>
-          <div id="front-end-languages" class="row col-lg-8 col-lg-offset-2">
-            <ul>
-              <li id="html" class="col-lg-1 thumbnail-icon">
-                <img src="./pictures/icons/languages/html5.svg" class="language-thumbnail">
-              </li>
-              <li id="css" class="col-lg-1 thumbnail-icon">
-                <img src="./pictures/icons/languages/css3.svg" class="language-thumbnail">
-              </li>
-              <li id="js" class="col-lg-1 thumbnail-icon">
-                <img src="./pictures/icons/languages/javascript.svg" class="language-thumbnail">
-              </li>
-              <li id="angular" class="col-lg-1 thumbnail-icon">
-                <img src="./pictures/icons/languages/angular.svg" class="language-thumbnail">
-              </li>
-              <li id="bootstrap" class="col-lg-1 thumbnail-icon">
-                <img src="./pictures/icons/languages/bootstrap.svg" class="language-thumbnail">
-              </li>
-              <li id="materialize" class="col-lg-1 thumbnail-icon">
-                <img src="./pictures/icons/languages/materialize.svg" class="language-thumbnail">
-              </li>
-              <li id="sass" class="col-lg-1 thumbnail-icon">
-                <img src="./pictures/icons/languages/sass.svg" class="language-thumbnail">
-              </li>
+            </div>
+            <div id="front-end-languages" class="row col-lg-8 col-lg-offset-2">
+              <ul>
+                <li id="html" class="col-lg-1 thumbnail-icon">
+                  <img src="./pictures/icons/languages/html5.svg" class="language-thumbnail">
+                </li>
+                <li id="css" class="col-lg-1 thumbnail-icon">
+                  <img src="./pictures/icons/languages/css3.svg" class="language-thumbnail">
+                </li>
+                <li id="js" class="col-lg-1 thumbnail-icon">
+                  <img src="./pictures/icons/languages/javascript.svg" class="language-thumbnail">
+                </li>
+                <li id="angular" class="col-lg-1 thumbnail-icon">
+                  <img src="./pictures/icons/languages/angular.svg" class="language-thumbnail">
+                </li>
+                <li id="bootstrap" class="col-lg-1 thumbnail-icon">
+                  <img src="./pictures/icons/languages/bootstrap.svg" class="language-thumbnail">
+                </li>
+                <li id="materialize" class="col-lg-1 thumbnail-icon">
+                  <img src="./pictures/icons/languages/materialize.svg" class="language-thumbnail">
+                </li>
+                <li id="sass" class="col-lg-1 thumbnail-icon">
+                  <img src="./pictures/icons/languages/sass.svg" class="language-thumbnail">
+                </li>
               </ul>
             </div>
           </div>
@@ -161,78 +154,77 @@
               <h3 class="col-lg-6">Back-End:</h3>
             </div>
             <div id="back-end-languages" class="row col-lg-8 col-lg-offset-2">
-            <ul>
-              <li id="node" class="col-lg-3">
-                <img src="./pictures/icons/languages/node.svg" class="language-thumbnail">
-              </li>
-              <li id="ror" class="col-lg-2">
-                <img src="./pictures/icons/languages/ror.svg" class="language-thumbnail">
-              </li>
-              <li id="mongodb" class="col-lg-3">
-                <img src="./pictures/icons/languages/mongodb.svg" class="language-thumbnail">
-              </li>
-              <li id="postgresql" class="col-lg-2">
-                <img src="./pictures/icons/languages/postgresql.svg" class="language-thumbnail">
-              </li>
-            </ul>
-          </div>
-          </div>
-          <div id="personal-skills" class="col-lg-12">
+              <ul>
+                <li id="node" class="col-lg-3">
+                  <img src="./pictures/icons/languages/node.svg" class="language-thumbnail">
+                </li>
+                <li id="ror" class="col-lg-2">
+                  <img src="./pictures/icons/languages/ror.svg" class="language-thumbnail">
+                </li>
+                <li id="mongodb" class="col-lg-3">
+                  <img src="./pictures/icons/languages/mongodb.svg" class="language-thumbnail">
+                </li>
+                <li id="postgresql" class="col-lg-2">
+                  <img src="./pictures/icons/languages/postgresql.svg" class="language-thumbnail">
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div id="background" class="col-lg-12">
           <div id="professional">
             <h3>Professional Experience</h3>
-              <ul class="col-lg-12 job-list">
+            <ul class="col-lg-12 job-list">
+              <li id="general-assembly" class="col-lg-3">
+                <div class="logo-container col-lg-12">
+                  <img id="ga-logo" class="logo-in-container" src="pictures/XP/ga-logo.png">
+                </div>
+                <h3>General Assembly</h3>
+                <h4>Web Development Immersive</h4>
+                <h5>London - Sept 2015/Dec 2015</h5>
+                <p>Node.JS, Ruby on Rails, Sinatra, PostgreSQL, Mongo, Angular,Javascript, CSS</p>
+              </li>
+              <li id="kinvolved" class="col-lg-3">
+                <div class="logo-container col-lg-12">
+                  <img id="kinvolved-logo" class="logo-in-container" src="pictures/XP/kinvolved.png">
+                </div>
+                <h3>Kinvolved</h3>
+                <h4>Business Analyst</h4>
+                <h5>New York - Sept 2014/Sept 2015</h5>
+                <p>Strategic Analyis, Market Research, Fund Raising, Project Management</p>
+              </li>
+              <li id="platform-economics" class="col-lg-3">
+                <div class="logo-container col-lg-12">
+                  <img id="platform-logo" class="logo-in-container" src="pictures/XP/platform.jpg">
+                </div>
 
-                <li id="general-assembly" class="col-lg-3">
-                  <div class="logo-container col-lg-12">
-                    <img id="ga-logo" class="logo-in-container" src="pictures/XP/ga-logo.png">
-                  </div>
-                  <h3>General Assembly</h3>
-                  <h4>Web Development Immersive</h4>
-                  <h5>London - Sept 2015/Dec 2015</h5>
-                  <p>Node.JS, Ruby on Rails, Sinatra, PostgreSQL, Mongo, Angular,Javascript, CSS</p>
-                </li>
-
-                <li id="kinvolved" class="col-lg-3">
-                  <div class="logo-container col-lg-12">
-                    <img id="kinvolved-logo" class="logo-in-container" src="pictures/XP/kinvolved.png">
-                  </div>
-                  <h3>Kinvolved</h3>
-                  <h4>Business Analyst</h4>
-                  <h5>New York - Sept 2014/Sept 2015</h5>
-                  <p>Strategic Analyis, Market Research, Fund Raising, Project Management</p>
-                </li>
-
-                <li id="platform-economics" class="col-lg-3">
-                  <div class="logo-container col-lg-12">
-                    <img id="platform-logo" class="logo-in-container" src="pictures/XP/platform.jpg">
-                  </div>
-
-                  <h3>Platform Economics</h3>
-                  <h4>Contributing Writer</h4>
-                  <h5>Boston - January 2014/Now</h5>
-                  <p>2015 MIT Platform Summit and online Blogger</p>
-                </li>
-                <li id="LPHI" class="col-lg-3">
-                  <div class="logo-container col-lg-12">
-                    <img id="lphi-logo" class="logo-in-container" src="pictures/XP/lphi.png">
-                  </div>
-                  <h3>LPHI</h3>
-                  <h4>Business Analyst</h4>
-                  <h5>New Orleans - Sept 2013/December 2014</h5>
-                  <p>Strategic Analyis & Market Research</p>
-                </li>
-              </ul>
-
+                <h3>Platform Economics</h3>
+                <h4>Contributing Writer</h4>
+                <h5>Boston - January 2014/Now</h5>
+                <p>2015 MIT Platform Summit and online Blogger</p>
+              </li>
+              <li id="LPHI" class="col-lg-3">
+                <div class="logo-container col-lg-12">
+                  <img id="lphi-logo" class="logo-in-container" src="pictures/XP/lphi.png">
+                </div>
+                <h3>LPHI</h3>
+                <h4>Business Analyst</h4>
+                <h5>New Orleans - Sept 2013/December 2014</h5>
+                <p>Strategic Analyis & Market Research</p>
+              </li>
+            </ul>
           </div>
-
         </div>
       </div>
 
       <div id="apps" class="col-lg-12">
+        <div id="pianocubes" class="row col-lg-12">
+          <img src="./pictures/apps/pianocube.png" class="col-lg-6">
+          <div id="pianocubes-presentation" class="app-presentation col-lg-6">
+            <h4>PianoCube</h4>
+          </div>
+        </div>
       </div>
 
       <div id="projects" class="col-lg-12">
