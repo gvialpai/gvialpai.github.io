@@ -201,7 +201,8 @@ h4.modal-title{
 .app-presentation{
   height: 45vh;
   padding: 0;
-  text-align: center
+  text-align: center;
+  background-color: #ffffff;
 }
 
 h5{
@@ -223,6 +224,10 @@ h5{
 
 #pianocube-phone{
   margin-top: 10%;
+}
+
+#uply-showcase {
+    background-color: #120079;
 }
 span.roll {
   background:url(../pictures/icons/mag.png) center center no-repeat #000;
