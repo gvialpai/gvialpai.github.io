@@ -27,13 +27,6 @@ li{
   color: #333333;
 }
 
-/*#home{
-  background-image: url('../pictures/places/landscape.jpg');
-  background-size: 100%;
-  height: 768px;
-  background-repeat: no-repeat;
-}*/
-
 #blurb {
     margin-top: 5%;
 }
@@ -80,6 +73,10 @@ a:hover {
 .logo-in-container {
 /*     width: 100%; 
 */    height: 100%;
+}
+
+.location-xp{
+  font-size: 1em;
 }
 
 #projects img{
