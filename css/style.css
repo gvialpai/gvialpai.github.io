@@ -186,13 +186,44 @@ h4.modal-title{
 
 .p-text{
   font-size: 1.25em;
-  text-align: left;
+}
+
+#apps{
+  height: 90vh;
+  padding: 0;
+}
+
+.showcase{
+  height: 90vh;
+  padding: 0;
+}
+
+.app-presentation{
+  height: 45vh;
+  padding: 0;
+  text-align: center
+}
+
+h5{
+  font-size: 3em
 }
 
 #pianocubes{
+  padding: 0;
+}
+
+#piano-showcase{
   background-color: #9AE4F0;
 }
 
+#pianocube-title{
+  font-size: 12em;
+  margin-top: 10%;
+}
+
+#pianocube-phone{
+  margin-top: 10%;
+}
 span.roll {
   background:url(../pictures/icons/mag.png) center center no-repeat #000;
   height: 200px;
