@@ -175,10 +175,14 @@ h4.modal-title{
     border-bottom-color: black;
 }
 
-.app-presentation{
+.app-title{
   text-align: center;
 }
 
+.p-text{
+  font-size: 1.25em;
+  text-align: left;
+}
 
 span.roll {
   background:url(../pictures/icons/mag.png) center center no-repeat #000;
