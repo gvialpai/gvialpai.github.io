@@ -6,6 +6,10 @@ body{
   background-color: #f8f8f8;
 }
 
+@font-face {
+  font-family: pianocube_font;
+  src: url(./fonts/BlindMelon.ttf);
+}
 main.col-lg-12{
   padding: 0;
   background-color: white;
@@ -177,11 +181,16 @@ h4.modal-title{
 
 .app-title{
   text-align: center;
+  font-family: pianocube_font;
 }
 
 .p-text{
   font-size: 1.25em;
   text-align: left;
+}
+
+#pianocubes{
+  background-color: #9AE4F0;
 }
 
 span.roll {
