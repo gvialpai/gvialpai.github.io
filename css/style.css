@@ -255,3 +255,29 @@ span.roll {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 767px) {
+    .app-title {
+        font-size: 6em;
+    }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    .app-title {
+        font-size: 4em;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    .app-title {
+        font-size: 9em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    .app-title {
+        font-size: 12em;
+    }
+}
