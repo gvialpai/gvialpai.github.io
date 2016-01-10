@@ -266,6 +266,10 @@ span.roll {
     .app-title {
         font-size: 6em;
     }
+    .thumbnail-icon{
+      margin-right: 0%;
+      margin-bottom: 5%;
+    }
 }
 
 /* sm */
@@ -294,5 +298,8 @@ span.roll {
 @media screen and (min-width: 1200px) {
     .app-title {
         font-size: 12em;
+    }
+    .thumbnail-icon{
+      margin-right: 5%;
     }
 }
