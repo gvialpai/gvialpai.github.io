@@ -180,6 +180,9 @@ h4.modal-title{
     border-bottom-color: black;
 }
 
+.language-type{
+  text-align: center;
+}
 
 .p-text{
   font-size: 1.25em;
@@ -276,6 +279,11 @@ span.roll {
 @media screen and (min-width: 992px) {
     .app-title {
         font-size: 9em;
+    }
+    .thumbnail-icon{
+      margin-right: 0%;
+      margin-bottom: 5%;
+
     }
 }
 
