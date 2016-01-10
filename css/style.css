@@ -273,6 +273,10 @@ span.roll {
     .app-title {
         font-size: 4em;
     }
+    .thumbnail-icon{
+      margin-right: 0%;
+      margin-bottom: 5%;
+    }
 }
 
 /* md */
@@ -283,7 +287,6 @@ span.roll {
     .thumbnail-icon{
       margin-right: 0%;
       margin-bottom: 5%;
-
     }
 }
 
