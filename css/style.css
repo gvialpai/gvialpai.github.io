@@ -276,6 +276,10 @@ h5{
   color: white
 }
 
+.link-bar{
+  margin-bottom: 30px;
+}
+
 span.roll {
   background:url(../pictures/icons/mag.png) center center no-repeat #000;
   height: 200px;
