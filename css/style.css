@@ -74,7 +74,7 @@ a:hover {
 .logo-container{
   height: 90px;
 }
-.logo-in-container {
+.logo-in- {
 /*     width: 100%; 
 */    height: 100%;
 }
@@ -288,6 +288,9 @@ span.roll {
       margin-right: 0%;
       margin-bottom: 5%;
     }
+    #introduction{
+      height: 50vh;
+    }
 }
 
 /* sm */
@@ -298,6 +301,9 @@ span.roll {
     .thumbnail-icon{
       margin-right: 0%;
       margin-bottom: 5%;
+    }
+    #introduction{
+      height: 50vh;
     }
 }
 
