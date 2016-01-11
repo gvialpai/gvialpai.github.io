@@ -271,6 +271,11 @@ h5{
     background-color: #65C28E;
 }
 
+#triviachat-title{
+  font-family: satisfy;
+  color: white
+}
+
 span.roll {
   background:url(../pictures/icons/mag.png) center center no-repeat #000;
   height: 200px;
