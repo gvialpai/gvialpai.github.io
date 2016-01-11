@@ -216,7 +216,7 @@ h4.modal-title{
 }
 
 .app-presentation{
-  height: 60vh;
+  height: auto;
   padding: 0;
   text-align: center;
   background-color: #ffffff;
