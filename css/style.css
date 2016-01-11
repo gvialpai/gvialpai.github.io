@@ -74,9 +74,8 @@ a:hover {
 .logo-container{
   height: 90px;
 }
-.logo-in- {
-/*     width: 100%; 
-*/    height: 100%;
+.logo-in-container {
+   height: 200px;
 }
 
 .location-xp{
