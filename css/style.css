@@ -267,6 +267,10 @@ h5{
   color: white;
 }
 
+#trivia-showcase {
+    background-color: #65C28E;
+}
+
 span.roll {
   background:url(../pictures/icons/mag.png) center center no-repeat #000;
   height: 200px;
