@@ -280,6 +280,10 @@ h5{
   margin-bottom: 30px;
 }
 
+#top-about, #apps-button, #projects-button{
+  font-family: 'Sintony', sans-serif
+}
+
 span.roll {
   background:url(../pictures/icons/mag.png) center center no-repeat #000;
   height: 200px;
