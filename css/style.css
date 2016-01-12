@@ -339,16 +339,19 @@ span.roll {
 
 /* md */
 @media screen and (min-width: 992px) {
-    .app-title {
-        font-size: 9em;
-    }
-    .thumbnail-icon{
-      margin-right: 0%;
-      margin-bottom: 5%;
-    }
-    .text{
+  .app-title {
+    font-size: 9em;
+  }
+  .thumbnail-icon{
+    margin-right: 0%;
+    margin-bottom: 5%;
+  }
+/*  .text{
     height: 90vh;
-    }
+  }*/
+  #introduction {
+    height: 90vh;
+  }
 }
 
 /* lg */
@@ -359,7 +362,10 @@ span.roll {
     .thumbnail-icon{
       margin-right: 5%;
     }
-    .text{
+/*    .text{
     height: 90vh;
+    }*/
+    #introduction {
+      height: 90vh;
     }
 }
