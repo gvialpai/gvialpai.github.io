@@ -23,8 +23,16 @@ li{
   width: 50px;
 }
 
+#introduction {
+    background-color: black;
+    height: auto;
+}
 #guihub-title{
   color: #333333;
+}
+.text{
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 #blurb {
@@ -305,7 +313,10 @@ span.roll {
       margin-bottom: 5%;
     }
     #introduction{
-      height: 50vh;
+      height: auto;
+    }
+    .text{
+    height: auto;
     }
 }
 
@@ -319,7 +330,10 @@ span.roll {
       margin-bottom: 5%;
     }
     #introduction{
-      height: 50vh;
+      height: auto;
+    }
+    .text{
+    height: auto;
     }
 }
 
@@ -332,6 +346,9 @@ span.roll {
       margin-right: 0%;
       margin-bottom: 5%;
     }
+    .text{
+    height: 90vh;
+    }
 }
 
 /* lg */
@@ -341,5 +358,8 @@ span.roll {
     }
     .thumbnail-icon{
       margin-right: 5%;
+    }
+    .text{
+    height: 90vh;
     }
 }
